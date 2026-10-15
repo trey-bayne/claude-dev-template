@@ -1,0 +1,175 @@
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="claude-dev-template-structure" name="Project structure">
+    <mxGraphModel dx="1422" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1180" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n11" value="Project structure created by claude-dev-template" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=17;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="18" width="1020" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" value="Solid boxes: everything the bootstrap creates — verified against a real project at this stage. Dashed red: what appears later. Colour = context tier, i.e. when Claude Code loads the file." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#555555;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="44" width="1020" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" value="&lt;b&gt;project/&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="84" width="390" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" value="&lt;b&gt;CLAUDE.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Tier 1 — read every session. Hard limit: 200 lines&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="58" y="116" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" value="&lt;b&gt;TASKS.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Tier 1 — build tracker. Resume Here + Phase Index&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="58" y="158" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" value="&lt;b&gt;PROJECT_BRIEF.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Tier 3 — full design doc, read only when scope is in question&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="58" y="200" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" value="&lt;b&gt;PERMISSIONS.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Rationale for every allow/deny rule in settings.json&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="58" y="242" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" value="&lt;b&gt;.env.example&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Key list only, always committed. .env never is&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="58" y="284" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" value="&lt;b&gt;.gitignore&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;From gitignore.template. Must NOT ignore CLAUDE.md / TASKS.md&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="58" y="326" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" value="&lt;b&gt;.git/&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Created by git init in Step 7, on the dev branch&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="58" y="368" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" value="&lt;b&gt;docs/     Tier 2 — loaded on demand, never preloaded&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="434" width="390" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" value="&lt;b&gt;INDEX.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Navigation map: &amp;#x27;I need X -&amp;gt; read Y&amp;#x27;. Entry point for Tier 2&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="466" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" value="&lt;b&gt;QUICK_REF.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;One-page command cheat sheet for this stack&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="508" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" value="&lt;b&gt;ARCHITECTURE.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Data flows, service map, ownership model&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="550" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" value="&lt;b&gt;PHASE_NOTES.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Per-phase goal + Definition of Done. /phase-test&amp;#x27;s spec&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="592" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n26" value="&lt;b&gt;DECISIONS.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Tech choices and why. &amp;#x27;Do not relitigate&amp;#x27;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="634" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" value="&lt;b&gt;ENV_VARS.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Full variable reference with descriptions&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="676" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" value="&lt;b&gt;SYSTEM_STATE.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Post-build: patterns that became the standard&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="58" y="718" width="354" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n29" value="&lt;b&gt;.claude/&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="456" y="84" width="604" height="636" as="geometry" />
+        </mxCell>
+        <mxCell id="n30" value="&lt;b&gt;settings.json&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Permission allow/deny lists + the hooks block that registers the hook below&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="474" y="116" width="568" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" value="&lt;b&gt;hooks/&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="166" width="568" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="n32" value="&lt;b&gt;session-start.sh&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Tier 0 — runs before CLAUDE.md. Inert unless registered in settings.json&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1" parent="1">
+          <mxGeometry x="492" y="198" width="532" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n33" value="&lt;b&gt;commands/     16 slash commands&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="266" width="568" height="436" as="geometry" />
+        </mxCell>
+        <mxCell id="n34" value="&lt;b&gt;checkpoint.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;snapshot before risky work&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="300" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n35" value="&lt;b&gt;status.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;where am I, what&amp;#x27;s healthy&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="348" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n36" value="&lt;b&gt;phase-review.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Opus scores the next phase&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="396" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n37" value="&lt;b&gt;phase-run.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;execute the phase&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="444" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n38" value="&lt;b&gt;phase-test.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;verify against the DoD&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="492" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n39" value="&lt;b&gt;phase-complete.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;close out, commit, push&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="540" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n40" value="&lt;b&gt;phase-auto.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;the whole cycle, unattended&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="588" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n41" value="&lt;b&gt;codebase-review.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;parallel multi-domain audit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="492" y="636" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n42" value="&lt;b&gt;sync-issues.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;GitHub issues -&amp;gt; TASKS.md&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="776" y="300" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n43" value="&lt;b&gt;prj-manage.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;image + dependency age&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="776" y="348" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n44" value="&lt;b&gt;prj-drift.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;drift vs the template&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="776" y="396" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n45" value="&lt;b&gt;prj-convert.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;adopt an existing project&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="776" y="444" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n46" value="&lt;b&gt;dev-build.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;build + test on dev&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="776" y="492" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n47" value="&lt;b&gt;ship.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;promote dev -&amp;gt; stable&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="776" y="540" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n48" value="&lt;b&gt;phase-release.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;tagged release&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="776" y="588" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n49" value="&lt;b&gt;phase-rollback.md&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;revert to previous tag&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="776" y="636" width="272" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n50" value="Dashed = installed only when the project uses the two-branch promotion workflow. A single-branch project omits these four." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=9;fontColor=#666666;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="492" y="668" width="540" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="n51" value="&lt;b&gt;Everything above is all the bootstrap creates. These appear later — do not expect them in a freshly bootstrapped project:&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="786" width="1020" height="196" as="geometry" />
+        </mxCell>
+        <mxCell id="n52" value="&lt;b&gt;.env&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;You create it from .env.example. Never committed&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="58" y="834" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n53" value="&lt;b&gt;.claude/settings.local.json&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Claude Code writes this itself for local permission choices&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="394" y="834" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n54" value="&lt;b&gt;docker-compose.yml&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;NOT generated by the bootstrap — Phase 1 builds it&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="834" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n55" value="&lt;b&gt;source directories&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;services/ src/ app/ — whatever the phases build&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="58" y="880" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n56" value="&lt;b&gt;scripts/&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Rebuild and deploy helpers the promotion commands call&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="394" y="880" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n57" value="&lt;b&gt;config/ , logs/&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;Runtime state produced by the stack, usually gitignored&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFFFFF;strokeColor=#B85450;dashed=1;dashPattern=1 2;" vertex="1" parent="1">
+          <mxGeometry x="730" y="880" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n58" value="Worth knowing: eight commands assume a Docker Compose stack (/status, /phase-complete, /phase-review, /phase-test, /codebase-review, /prj-manage, /phase-release, /phase-rollback) but the bootstrap never writes a compose file. Phase 1 has to, or those commands have nothing to talk to." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=9;fontColor=#B85450;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="58" y="930" width="990" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n59" value="&lt;b&gt;Context tiers — the reason for the split&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fontSize=12;fontStyle=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1006" width="1020" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n60" value="&lt;b&gt;Tier 0&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;session-start.sh — fires before anything else&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#FFF2CC;strokeColor=#D6B656;" vertex="1" parent="1">
+          <mxGeometry x="58" y="1040" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n61" value="&lt;b&gt;Tier 1&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;CLAUDE.md, TASKS.md — every session, always&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="394" y="1040" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n62" value="&lt;b&gt;Tier 2&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;docs/* — pulled only when relevant&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#D5E8D4;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1040" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n63" value="&lt;b&gt;Tier 3&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;PROJECT_BRIEF.md — rarely&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="58" y="1080" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n64" value="&lt;b&gt;Config&lt;/b&gt;&lt;div style=&quot;font-size:9px;color:#555555;margin-top:1px&quot;&gt;settings.json, PERMISSIONS.md, .env.example&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;fillColor=#F5F5F5;strokeColor=#9E9E9E;" vertex="1" parent="1">
+          <mxGeometry x="394" y="1080" width="320" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="n65" value="Every line in a Tier 1 file is loaded at the start of every session, so phase detail, env var tables and architecture diagrams belong in docs/ instead. That is the whole point of the structure: keep the always-loaded context small and relevant." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#555555;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="40" y="1124" width="1020" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
